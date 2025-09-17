@@ -30,18 +30,6 @@ body {
                          "pie-pagina";
 }
 
-@media screen and (min-width: 1200px) {
-   .contenedor {
-    grid-template-columns: repeat(4, 1fr); /* 1 columnas */   
-
-    grid-template-areas: "cabeza cabeza cabeza cabeza"
-                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
-                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
-                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
-                         "pie-pagina pie-pagina pie-pagina pie-pagina"
-   }
-}
-
 .elm1 {
     background-color: lightblue;
     grid-area: cabeza;
@@ -55,8 +43,28 @@ body {
     grid-area: contenido-lateral;
     display: none;
 }
+
 .elm4 {
     background-color: lightsalmon;
     grid-area: pie-pagina;
 }
+
+@media screen and (min-width: 1200px) {
+   .contenedor {
+    grid-template-columns: repeat(4, 1fr); /* 1 columnas */   
+
+    grid-template-areas: "cabeza cabeza cabeza cabeza"
+                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
+                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
+                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
+                         "pie-pagina pie-pagina pie-pagina pie-pagina"
+   }
+
+   .elm3 {
+        display: block;
+    }
+
+}
+
+
 
