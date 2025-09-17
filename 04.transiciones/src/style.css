@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    /* background-color: #222; */
+}
+
+.contenedor {
+    background-color: darkgreen;
+    height: 30rem;
+    width: 90%;
+    margin: 3rem auto;
+    outline: 8px solid black; /* no es parte del modelo caja. */
+}
+
+.elemento {
+    background-color: chocolate;
+    width: 10rem;
+    height: 10rem;
+    color: #eee;
+    padding: .5rem;
+
+    transform: translateX(0);
+
+}
+
+.contenedor:hover .elemento { 
+    transform: translateX(200px);
+}
