@@ -13,3 +13,43 @@ body {
     font-size: 100%;
     /* background-color: #222; */
 }
+
+.contenedor {
+    background-color: darkgreen;
+    height: 30rem;
+    width: 90%;
+    margin: 3rem auto;
+    outline: 8px solid black; /* no es parte del modelo caja. */
+}
+
+.elemento {
+    background-color: chocolate;
+    width: 10rem;
+    height: 10rem;
+    color: #eee;
+    padding: .5rem;
+
+    /* Transform */
+    /* * translate */
+    /* * rotate */
+    /* * scale */
+    /* * skew */
+    transform: translateX(20px) translateY(20px) rotateZ(20deg);
+    transform: rotateZ(20deg);
+    transform: scale(80%) rotateZ(20deg) translateX(50px) translateY(50px);
+
+    /* ! rotate ->  */
+    /* grados [0-360] -> deg */
+    /* radians [0-6.28] -> rad */
+    /* gradians [0-400] -> grad */
+    /* vueltas [0-infinito] (numeros decimales) turn ->  */
+    /* 180deg -> 3.14rad -> 200grad -> .5turn */
+    /* 360deg -> 6.28rad -> 400grad -> 1turn */
+    transform: translateX(0) rotateZ(0turn);
+
+    transition: 800ms transform; /* segundos -> s | milisegundos -> ms */
+}
+
+.contenedor:hover .elemento {
+    transform: translateX(200px) rotateZ(0.8turn);
+}
