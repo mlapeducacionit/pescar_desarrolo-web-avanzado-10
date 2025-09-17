@@ -45,11 +45,12 @@ body {
     /* vueltas [0-infinito] (numeros decimales) turn ->  */
     /* 180deg -> 3.14rad -> 200grad -> .5turn */
     /* 360deg -> 6.28rad -> 400grad -> 1turn */
-    transform: translateX(0) rotateZ(0turn) scale(0); /* Principio animación */
+    /*                     x  y  z */
+    transform: translate3d(0, 0, 0) rotateZ(0turn) scale(1); /* Principio animación */
 
     transition: 800ms transform; /* segundos -> s | milisegundos -> ms */
 }
 
 .contenedor:hover .elemento { 
-    transform: translateX(200px) rotateZ(3turn) scale(.5); /* Final animación */
+    transform: translate3d(200px, -200px, 0) rotateZ(3turn) scale(.5); /* Final animación */
 }
