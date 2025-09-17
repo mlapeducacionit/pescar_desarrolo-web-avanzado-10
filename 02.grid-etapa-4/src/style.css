@@ -32,14 +32,13 @@ body {
 
 @media screen and (min-width: 1200px) {
    .contenedor {
-    grid-template-columns: repeat(4, 1fr); /* 1 columnas */
-   
+    grid-template-columns: repeat(4, 1fr); /* 1 columnas */   
 
-    grid-template-areas: "cabeza cabeza cabeza contenido-lateral"
-                         "cabeza cabeza cabeza contenido-lateral"
-                         "contenido-principal contenido-principal contenido-principal  contenido-lateral"
-                         "contenido-principal contenido-principal contenido-principal  contenido-lateral"
-                         "pie-pagina pie-pagina pie-pagina pie-pagina";
+    grid-template-areas: "cabeza cabeza cabeza cabeza"
+                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
+                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
+                         "contenido-principal contenido-principal contenido-principal contenido-lateral"
+                         "pie-pagina pie-pagina pie-pagina pie-pagina"
    }
 }
 
